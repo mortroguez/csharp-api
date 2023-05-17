@@ -1,4 +1,6 @@
 using csharp_api.DatabaseModels;
+using csharp_api.Interfaces;
+using csharp_api.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,8 @@ builder.Services.AddDbContext<DatabaseContext>(
         options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
     }
 );
+
+builder.Services.AddScoped<ICustomer, CustomerRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
