@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VQXKqRdyFfhGnotjvFWRyJ+lsiUlG0vnG0QsIorD+7Y=",
+  "Source": "csharp-api",
+  "BasePath": "_content/csharp-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
